@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humble Bundle Downloader</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Humble Bundle Downloader</h1>
+        <p id="session-cookie" class="session-status">Checking session…</p>
+      </header>
+
+      <section class="controls">
+        <div class="field">
+          <label for="content-type">Content type</label>
+          <select id="content-type">
+            <option value="ebook">Ebook</option>
+            <option value="audio">Audio</option>
+            <option value="video">Video</option>
+            <option value="software">Software</option>
+          </select>
+        </div>
+
+        <div class="field" id="ebook-format-group">
+          <label for="ebook-format">Format</label>
+          <select id="ebook-format">
+            <option value="PDF">PDF</option>
+            <option value="EPUB">EPUB</option>
+            <option value="MOBI">MOBI</option>
+            <option value="CBZ">CBZ</option>
+            <option value="PRC">PRC</option>
+          </select>
+        </div>
+
+        <div class="actions">
+          <button id="preview" class="btn btn-secondary">Preview</button>
+          <button id="download-now" class="btn btn-primary">Download All</button>
+        </div>
+      </section>
+
+      <p id="status" class="status" style="display:none"></p>
+
+      <section id="results"></section>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

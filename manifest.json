@@ -1,0 +1,20 @@
+{
+  "name": "Humble Bundle Downloader",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "Download your entire Humble Bundle library — ebooks, audio, video, and software — in one click.",
+  "permissions": ["cookies", "downloads"],
+  "host_permissions": ["https://*.humblebundle.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Humble Bundle Downloader"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
